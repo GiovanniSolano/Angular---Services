@@ -1,3 +1,10 @@
+<button routerLink="/escritores">Regresar</button>
+
 <h2>{{escritorDetalle?.nombre}} {{escritorDetalle?.apellidos}}</h2>
 <img [src]="escritorDetalle?.imagen" [alt]="escritorDetalle?.nombre">
 <p>{{escritorDetalle?.pais}}</p>
+
+<button (click)="verLibros()">Ver libros</button>
+<button [routerLink]="['/escritor', escritorDetalle.id]">Ocultar</button>
+<br><br>
+<router-outlet></router-outlet>
