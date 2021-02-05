@@ -1,31 +1,3 @@
-<h1>Servicios - Angular</h1>
+<router-outlet>
 
-<h4>Un servicio es básicamente una clase Ts que se dedica a realizar las acciones que necesitamos realizar sobre los diferentes datos de nuestra aplicación - Acceder desde cualquier componente a está información
-</h4>
-<h4>Se encargan de realizar acciones concretas sobre los datos de nuestra aplicación</h4>
-<h4>Para poder utilizar servicios dentro de nuestros componentes disponemos de la inyección de dependencias</h4>
-
-<br>
-
-<button (click)="onClick()">Agregar nueva persona</button>
-<button (click)="onClickActivas()">Personas Activas</button>
-<br><br>
-<table border="1">
-    <thead>
-        <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Edad</th>
-        <th>Activo</th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let persona of personas">
-            <td>{{persona.nombre}}</td>
-            <td>{{persona.apellido}}</td>
-            <td>{{persona.edad}}</td>
-            <td>{{persona.activo}}</td>
-        </tr>
-    </tbody>
-</table>
-
-<br>
-<app-lista></app-lista>
+</router-outlet>
